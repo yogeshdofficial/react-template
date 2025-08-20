@@ -7,7 +7,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 export default function BaseLayout() {
   return (
     <div className="min-h-screen">
-      <SidebarProvider className="flex">
+      <SidebarProvider defaultOpen={false} className="flex">
         <AppSidebar />
         <div className="min-h-screen flex flex-1 flex-col">
           <Header className="" />
